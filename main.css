@@ -34,7 +34,13 @@
     font-weight: bolder;
 }
 
-
+.sluzby__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    
+    
+}
 
 .sluzba{
     margin-top: 2em;
@@ -42,7 +48,8 @@
     border: 1px solid;
     border-color: var(--dark-blue);
     border-radius: 50px;
-    width: max-content;
+    width: 270px;
+    justify-self: center;
 }
 
 .sluzba:hover{
