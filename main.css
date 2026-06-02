@@ -28,6 +28,24 @@
     font-weight: bold;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+li::before {
+    content: "✓";
+}
+
 .h1{
     font-size: 2em;
     text-align: center;
@@ -37,27 +55,35 @@
 .sluzby__list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1em;
+    gap: 3em;
     
     
 }
 
 .sluzba{
-    margin-top: 2em;
     padding: 2em;
     border: 1px solid;
     border-color: var(--dark-blue);
     border-radius: 50px;
     width: 270px;
     justify-self: center;
+    display: flex;
+    flex-direction: column;
+    
+
 }
 
 .sluzba:hover{
     scale: 1.05;
 }
 
+.sluzba__foot{
+    display: flex;
+    justify-content: space-between;
+}
+
 .button{
-    padding: 1.2em ;
+    padding: 1em;
     background-color: var(--dark-blue);
     border: 1px solid;
     border-radius: 30px;
@@ -78,6 +104,26 @@
     font-size: 1.5em;
     font-weight: bold;
     color: var(--dark-blue);
+}
+
+.foot{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2px 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-blue);
+}
+
+.foot>div>a{
+    text-decoration: none;
+    color: white;
+}
+.foot>p{
+    font-weight: bold;
+    color: white;
 }
 
 
