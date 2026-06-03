@@ -107,14 +107,14 @@ li::before {
 }
 
 .foot{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2px 1em;
+    margin-top: 2em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: var(--dark-blue);
+    width: 100%;
 }
 
 .foot>div>a{
@@ -125,6 +125,61 @@ li::before {
     font-weight: bold;
     color: white;
 }
+
+.intro{
+    position: relative;
+    justify-self: center;
+    
+}
+
+.h1--light{
+    font-size: 1.05em;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+
+.intro__desc{
+    font-size: 0.75em;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+}
+
+.paragraph--list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1em;
+}
+
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border: 2px solid;
+    border-color: var(--dark-blue);
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+.paragraph__title{
+    font-size: 1.5em;
+    font-weight: bold;
+    align-items: flex-start;
+}
+
+.paragraph__desc{
+    margin-top: -1.5em;
+}
+
+
+
 
 
 
