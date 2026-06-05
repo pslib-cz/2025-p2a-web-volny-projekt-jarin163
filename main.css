@@ -206,6 +206,36 @@ li::before {
     
 }
 
+.forms__list{
+    display: grid;
+    grid-template-columns: repeat(minmax(250px, 1fr));
+}
+
+
+
+select{
+    padding: 10px;
+    background-color: var(--light-blue);
+    border: 1px solid;
+    border-color: var(--dark-blue);
+    border-radius: 2em;
+    color: var(--light);
+    }
+
+input{
+    padding: 10px;
+    background-color: var(--light-blue);
+    border: 1px solid;
+    border-color: var(--dark-blue);
+    border-radius: 2em;
+    color: var(--light);
+}
+
+label{
+    font-weight: bolder;
+    margin-top: 1em;
+}
+
 
 
 
