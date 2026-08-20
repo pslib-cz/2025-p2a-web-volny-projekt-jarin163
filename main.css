@@ -18,6 +18,7 @@
     --fs-h3: 22px;
     --fs-body: 14px;
     --fs-label: 18px;
+    --fs-stat: 12px;
 
     --ls-label: 2px;
 }
@@ -35,6 +36,10 @@ a:hover{
     scale: 1.1;
 }
 
+img{
+    filter: grayscale(200);
+}
+
 .pulse-header{
     display: flex;
     justify-content: space-between;
@@ -43,6 +48,7 @@ a:hover{
     position: sticky;
     top: 0;
     border-bottom: 2px solid var(--ink);
+    z-index: 150;
 
 }
 
@@ -158,7 +164,7 @@ a:hover{
 .btn-primary:hover{
     background-color: var(--dark-pulse);
     border-color: var(--dark-pulse);
-    scale: 1.1;
+    
 }
 
 .btn-secondary{
@@ -177,7 +183,7 @@ a:hover{
 .btn-secondary:hover{
     background-color: var(--ink);
     color: white;
-    scale: 1.1;
+    
 }
 
 .description{
@@ -224,4 +230,108 @@ a:hover{
 .body-black{
     font-family: var(--font-body);
     font-size: var(--fs-body);
+}
+
+.body-bold{
+    font-size: var(--fs-body);
+    font-family: var(--font-body);
+    font-weight: bold;
+}
+
+.stat-grey{
+    font-size: var(--fs-stat);
+    font-family: var(--font-label);
+    color: var(--grey);
+}
+
+.sluzby-introduction{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    }
+
+.sluzba{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+    border: 2px solid var(--ink);
+    transition: 0.5s;
+    justify-self: center;
+}
+
+.rectangle{
+    display: inline-block;
+    width: 75px;
+    height: 15px;
+    background-color: var(--grey);
+}
+
+.rectangle--red{
+    background-color: var(--pulse);
+}
+
+.rectangle-scale{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.sluzba-img{
+    height: 150px;
+    object-fit: cover;
+}
+
+.sluzba-content{
+    padding: 20px;
+}
+
+.sluzba-ul{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.sluzba-ul li::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--pulse);
+    margin-right: 10px;
+}
+
+.sluzba a{
+    display: flex;
+    justify-self: center;
+}
+
+.sluzba--favourite{
+    border: 2px solid var(--pulse);
+    position: relative;
+    
+}
+
+
+
+.tag{
+    font-size: var(--fs-stat);
+    font-family: var(--font-label);
+    color: white;
+    padding: 4px;
+    background-color: var(--pulse);
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 60;
+}
+
+.sluzby-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-bottom: 20px;
 }
