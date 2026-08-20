@@ -16,18 +16,212 @@
     --fs-h1: 56px;
     --fs-h2: 38px;
     --fs-h3: 22px;
-    --fs-body: 16px;
+    --fs-body: 14px;
     --fs-label: 18px;
 
     --ls-label: 2px;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover{
+    scale: 1.1;
 }
 
 .pulse-header{
     display: flex;
     justify-content: space-between;
     background-color: var(--paper);
+    padding: 5px 15px;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid var(--ink);
+
+}
+
+.logo{
+    display: flex;
+    font-size: var(--fs-h2);
+    font-family: var(--font-display);
+    color: black;
+    align-items: center;
+    gap: 8px
+}
+
+.logo-square{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--pulse);
+}
+
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    font-weight: bold;
+}
+
+.header-nav a{
+    color: black;
+}
+
+.pulse-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    background-color: var(--ink);
+}
+
+.logo-footer{
+    display: flex;
+    font-size: var(--fs-h2);
+    font-family: var(--font-display);
+    color: white;
+    align-items: center;
+    gap: 8px
+}
+
+.body-grey{
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    color: var(--grey);
+
+}
+
+.label-grey{
+    font-family: var(--font-label);
+    font-size: var(--fs-label);
+    color: var(--grey);
+    letter-spacing: var(--ls-label);
+}
+
+.introduction{
+    background-image: url(./images/skupinovy-trenink-img.avif);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 20px;
+
+}
+
+.h1{
+    font-size: var(--fs-h1);
+    font-family: var(--font-display);
+}
+.h1--white{
+    color: white;
+}
+
+.highlight{
+    color: var(--pulse);
+}
+
+.label-red{
+    font-family: var(--font-label);
+    font-size: var(--fs-label);
+    color: var(--pulse);
+    letter-spacing: var(--ls-label);
+}
+
+.body-white{
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    color: white;
+}
+
+.btn-primary{
+    padding: 15px 28px;
+    background-color: var(--pulse);
+    color: white;
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    letter-spacing: var(--ls-label);
+    font-weight: 700;
+    border: 2px solid var(--pulse);
+    max-width: fit-content;
+    transition: 0.5s;
+}
+
+.btn-primary:hover{
+    background-color: var(--dark-pulse);
+    border-color: var(--dark-pulse);
+    scale: 1.1;
+}
+
+.btn-secondary{
+    padding: 15px 28px;
+    background-color: white;
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    letter-spacing: var(--ls-label);
+    font-weight: 700;
+    border: 2px solid var(--ink);
+    max-width: fit-content;
+    transition: 0.5s;
+}
+
+.btn-secondary:hover{
+    background-color: var(--ink);
+    color: white;
+    scale: 1.1;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
 }
 
 .h2{
-    
+    font-size: var(--fs-h2);
+    font-family: var(--font-display);
+
+}
+
+.h3{
+    font-family: var(--font-display);
+    font-size: var(--fs-h3);
+}
+
+.h2--red{
+    color: var(--pulse);
+}
+
+.step-line{
+    display: inline-block;
+    height: 5px;
+    width: 100%;
+    background-color: var(--ink);
+}
+
+.step{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.step-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
+}
+
+.body-black{
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
 }
