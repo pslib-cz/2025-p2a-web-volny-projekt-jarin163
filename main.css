@@ -103,6 +103,7 @@ img{
     font-family: var(--font-body);
     font-size: var(--fs-body);
     color: var(--grey);
+    margin: 0;
 
 }
 
@@ -111,16 +112,15 @@ img{
     font-size: var(--fs-label);
     color: var(--grey);
     letter-spacing: var(--ls-label);
+    margin: 0;
 }
 
 .introduction{
     background-image: url(./images/skupinovy-trenink-img.avif);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     padding: 20px;
-    gap: 10px;
+    gap: 20px;
 
 }
 
@@ -142,12 +142,14 @@ img{
     font-size: var(--fs-label);
     color: var(--pulse);
     letter-spacing: var(--ls-label);
+    margin: 0;
 }
 
 .body-white{
     font-family: var(--font-body);
     font-size: var(--fs-body);
     color: white;
+    margin: 0;
 }
 
 .btn-primary{
@@ -234,12 +236,14 @@ img{
 .body-black{
     font-family: var(--font-body);
     font-size: var(--fs-body);
+    margin: 0;
 }
 
 .body-bold{
     font-size: var(--fs-body);
     font-family: var(--font-body);
     font-weight: bold;
+    margin: 0;
 }
 
 .stat-grey{
@@ -361,6 +365,7 @@ img{
 
 .body-bold-red{
     color: var(--pulse);
+    margin: 0;
 }
 
 .quote{
@@ -405,3 +410,63 @@ img{
     background-color: var(--pulse);
     z-index: 30;
 }
+
+.h2-white{
+    color: white;
+}
+
+.label-white{
+    font-family: var(--font-label);
+    font-size: var(--fs-label);
+    color: white;
+    letter-spacing: var(--ls-label);
+    margin: 0;
+}
+
+.formular-introduction{
+    background-image: url(./images/rope-swinging-img\ 2.png);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.formular{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--paper);
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.bunka{
+    align-self: center;
+    
+}
+
+.bunka input, select{
+    border-radius: 0%;
+    border: 1px solid var(--grey);
+    width: 300px;
+    height: 40px;
+}
+
+form > button{
+    align-self: center;
+
+}
+
+form > button:hover{
+    scale: 1.1;
+    
+}
+
