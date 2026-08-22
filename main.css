@@ -273,6 +273,7 @@ img{
     gap: 20px;
     border: 2px solid var(--ink);
     transition: 0.5s;
+    justify-self: center;
     
         
 }
@@ -326,6 +327,7 @@ img{
 .sluzba a{
     align-self: center;
     margin-top: auto;
+    
 }
 
 .sluzba--favourite{
