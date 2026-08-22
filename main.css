@@ -13,14 +13,14 @@
     --font-body: 'Inter', sans-serif;
     --font-label: 'IBM Plex Mono', monospace;
 
-    --fs-h1: 56px;
-    --fs-h2: 38px;
-    --fs-h3: 22px;
-    --fs-body: 14px;
-    --fs-label: 18px;
-    --fs-stat: 12px;
+    --fs-h1: 4.5rem;
+    --fs-h2: 3rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1rem;
+    --fs-label: 0.875rem;
+    --fs-stat: 0.75rem;
 
-    --ls-label: 2px;
+    --ls-label: 0.125rem;
 }
 
 body{
@@ -44,7 +44,7 @@ img{
     display: flex;
     justify-content: space-between;
     background-color: var(--paper);
-    padding: 5px 15px;
+    padding: 0.5em 1em;
     position: sticky;
     top: 0;
     border-bottom: 2px solid var(--ink);
@@ -58,13 +58,13 @@ img{
     font-family: var(--font-display);
     color: black;
     align-items: center;
-    gap: 8px
+    gap: 0.5em;
 }
 
 .logo-square{
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 0.5em;
+    height: 0.5em;
     background-color: var(--pulse);
 }
 
@@ -85,8 +85,8 @@ img{
 .pulse-footer{
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    padding: 1.25em;
+    gap: 1.25em;
     background-color: var(--ink);
 }
 
@@ -96,7 +96,7 @@ img{
     font-family: var(--font-display);
     color: white;
     align-items: center;
-    gap: 8px
+    gap: 0.5em;
 }
 
 .body-grey{
@@ -122,8 +122,8 @@ img{
 .introduction{
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    padding: 1.25em;
+    gap: 1.25em;
 
 }
 
@@ -156,7 +156,8 @@ img{
 }
 
 .btn-primary{
-    padding: 15px 28px;
+    display: inline-block;
+    padding: 1em 1.75em;
     background-color: var(--pulse);
     color: white;
     font-family: var(--font-body);
@@ -175,7 +176,8 @@ img{
 }
 
 .btn-secondary{
-    padding: 15px 28px;
+    display: inline-block;
+    padding: 1em 1.75em;
     background-color: white;
     color: var(--ink);
     font-family: var(--font-body);
@@ -196,8 +198,8 @@ img{
 .description{
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    padding: 1.25em;
+    gap: 1.25em;
 }
 
 .h2{
@@ -261,16 +263,16 @@ img{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
+    gap: 1.25em;
+    padding: 1.25em;
     }
 
 .sluzba{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
     height: 100%;
-    gap: 20px;
+    gap: 1.25em;
     border: 2px solid var(--ink);
     transition: 0.5s;
     justify-self: center;
@@ -280,8 +282,8 @@ img{
 
 .rectangle{
     display: inline-block;
-    width: 75px;
-    height: 15px;
+    width: 4.5em;
+    height: 1em;
     background-color: var(--grey);
 }
 
@@ -301,17 +303,17 @@ img{
 }
 
 .sluzba-content{
-    padding: 20px;
+    padding: 1.25em;
     display: flex;
     flex-direction: column;
 }
 
 .sluzba-ul{
     list-style: none;
-    padding: 10px;
+    padding: 0.5em;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.5em;
     
 }
 
@@ -342,7 +344,7 @@ img{
     font-size: var(--fs-stat);
     font-family: var(--font-label);
     color: white;
-    padding: 4px;
+    padding: 0.25em;
     background-color: var(--pulse);
     position: absolute;
     top: 5px;
@@ -353,8 +355,8 @@ img{
 .sluzby-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 1.25em;
+    padding: 1.25em;
     
 }
 
@@ -362,18 +364,18 @@ img{
     background-color: var(--paper);
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 1.25em;
     gap: 1em;
 }
 
 .omne-introduction-content{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.5em;
 }
 
 .omne-img{
-    width: 300px;
+    width: 100%;
     height: 400px;
     object-fit: cover;
     align-self: center;
@@ -389,9 +391,9 @@ img{
     background-color: var(--ink);
     display: flex;
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 2.5em 1.25em;
     text-align: center;
-    gap: 20px;
+    gap: 1.25em;
 }
 
 .h3--white{
@@ -401,22 +403,22 @@ img{
 .training{
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    padding: 1.25em;
+    gap: 1.25em;
 
 }
 
 .training-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
-    gap: 20px;
+    gap: 1.25em;
 }
 
 .training-title{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 20px;
+        gap: 1.25em;
     }
 
 .omne-img-div{
@@ -453,15 +455,15 @@ img{
     background-position: center;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    padding: 1.25em;
+    gap: 1.25em;
 }
 
 .formular{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    gap: 1.25em;
+    padding: 1.25em;
     background-color: var(--paper);
 
 }
@@ -469,7 +471,7 @@ img{
 form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25em;
    align-items: center;
     
 }
@@ -510,32 +512,28 @@ form > button:hover{
 
 .review{
     border: 2px solid var(--ink);
-    padding: 20px;
+    padding: 1.25em;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25em;
     width: 220px;
     background-color: white;
     transition: 0.5s;
     justify-self: center;
 }
 
-.review:hover{
-    transform: scale(1.1);
-}
-
 .reviews{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    gap: 1.25em;
+    padding: 1.25em;
     background-color: var(--paper);
 }
 
 .review-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+    gap: 1.25em;
 }
 
 @media (min-width: 800px) {
@@ -555,11 +553,11 @@ form > button:hover{
     .omne-introduction{
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        gap: 1.25em;
     }
 
     .quote{
-        padding: 80px 60px;
+        padding: 5em 4em;
     }
 
     .training-title{
@@ -569,15 +567,15 @@ form > button:hover{
     .formular{
         flex-direction: row;
         justify-content: space-between;
-        padding: 40px;
+        padding: 2.5em;
     }
 
     .formular-title{
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25em;
         justify-content: center;
     }
-    
+
     
 }
