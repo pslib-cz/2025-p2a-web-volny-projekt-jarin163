@@ -269,10 +269,12 @@ img{
     display: flex;
     flex-direction: column;
     width: 300px;
+    height: 100%;
     gap: 20px;
     border: 2px solid var(--ink);
     transition: 0.5s;
-    justify-self: center;
+    
+        
 }
 
 .rectangle{
@@ -299,6 +301,8 @@ img{
 
 .sluzba-content{
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .sluzba-ul{
@@ -320,8 +324,8 @@ img{
 }
 
 .sluzba a{
-    display: flex;
-    justify-self: center;
+    align-self: center;
+    margin-top: auto;
 }
 
 .sluzba--favourite{
@@ -348,7 +352,8 @@ img{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
+    
 }
 
 .omne-introduction{
@@ -513,5 +518,9 @@ form > button:hover{
 
     .introduction{
         max-width: 50%;
+    }
+
+    .sluzby-introduction{
+        align-items: center;
     }
 }
