@@ -491,7 +491,7 @@ form > button:hover{
     width: 220px;
     background-color: white;
     transition: 0.5s;
-    justify-self: flex-start;
+    justify-self: center;
 }
 
 .review:hover{
@@ -507,10 +507,9 @@ form > button:hover{
 }
 
 .review-list{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
-    justify-content: center;
 }
 
 @media (min-width: 800px) {
