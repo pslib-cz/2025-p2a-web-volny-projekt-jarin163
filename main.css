@@ -412,6 +412,13 @@ img{
     gap: 20px;
 }
 
+.training-title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
 .omne-img-div{
     position: relative;
     align-self: center;
@@ -543,8 +550,6 @@ form > button:hover{
     }
 
     .training-title{
-        display: flex;
-        flex-direction: column;
         align-items: center;
     }
 }
