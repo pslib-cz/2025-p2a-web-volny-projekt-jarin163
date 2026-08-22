@@ -115,8 +115,11 @@ img{
     margin: 0;
 }
 
-.introduction{
+.introduction-bg{
     background-image: url(./images/skupinovy-trenink-img.avif);
+}
+
+.introduction{
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -250,6 +253,7 @@ img{
     font-size: var(--fs-stat);
     font-family: var(--font-label);
     color: var(--grey);
+    margin: 0;
 }
 
 .sluzby-introduction{
@@ -397,6 +401,7 @@ img{
 
 .omne-img-div{
     position: relative;
+    align-self: center;
 }
 
 .omne-tag{
@@ -453,7 +458,7 @@ form{
     
 }
 
-.bunka input, select{
+.bunka input, .bunka select{
     border-radius: 0%;
     border: 1px solid var(--grey);
     width: 300px;
@@ -470,6 +475,43 @@ form > button:hover{
     
 }
 
+.review{
+    border: 2px solid var(--ink);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 220px;
+    background-color: white;
+    transition: 0.5s;
+    justify-self: flex-start;
+}
 
+.review:hover{
+    transform: scale(1.1);
+}
 
+.reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--paper);
+}
 
+.review-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media (min-width: 800px) {
+    .pulse-footer{
+        align-items: center;
+    }
+
+    .introduction{
+        max-width: 50%;
+    }
+}
