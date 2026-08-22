@@ -2,7 +2,7 @@
 
 > **Jméno a příjmení:**  `Jaroslav Nosek`
 
-> **Název projektu:** `Fitness Coaching`
+> **Název projektu:** `PULSE Coaching`
 
 ---
 
