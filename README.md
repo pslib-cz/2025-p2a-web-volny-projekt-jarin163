@@ -37,7 +37,7 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 
 | Výstup | Odkaz |
 |---|---|
-| GitHub Pages (live) | [`https://pslib-cz.github.io/2025-p2a-web-volny-projekt-jarin163/`](#) |
+| GitHub Pages (live) | [`https://pslib-cz.github.io/2025-p2a-web-volny-projekt-jarin163/`](https://pslib-cz.github.io/2025-p2a-web-volny-projekt-jarin163/) |
 | Grafický manuál (Figma / Canva) | [`https://www.figma.com/design/kNblTEfOfZz7LGRqwiKgtF/NosekJaroslav---PULSE?node-id=0-1&p=f&t=N0NSOrNtDGZ4L9aO-0`](#) |
 | Grafický návrh webu (Figma) | [`https://www.figma.com/design/kNblTEfOfZz7LGRqwiKgtF/NosekJaroslav---PULSE?node-id=12-315&p=f&t=N0NSOrNtDGZ4L9aO-0`](#) |
 | Fotografie / média | [`Doplň odkaz`](#) |
