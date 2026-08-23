@@ -547,6 +547,34 @@ form > button:hover{
     gap: 1.25em;
 }
 
+.clients{
+    padding: 20px;
+    gap: 1.5em;
+    background-color: var(--paper);
+}
+
+.clients-title{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.photos-swiper {
+  padding: 1.25em 1.25em 2.5em;
+}
+
+.photos-swiper .swiper-slide img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.photos-swiper .swiper-button-next,
+.photos-swiper .swiper-button-prev {
+  color: var(--dark-pulse);
+
+}
+
 @media (min-width: 800px) {
     .pulse-footer{
         align-items: center;
@@ -596,5 +624,8 @@ form > button:hover{
         font-size: var(--fs-body);
     }
 
-    
+    .clients-title{
+        align-items: center;
+    }
 }
+

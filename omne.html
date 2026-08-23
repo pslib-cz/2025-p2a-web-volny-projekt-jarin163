@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
     <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <header class="pulse-header">
@@ -70,7 +71,30 @@
     </section>
 
 
+    <section class="clients">
+        <div class="clients-title">
+            <p class="label-red">Z TRÉNINKŮ</p>
+            <h2 class="h2">JAK TO VYPADÁ V PRAXI</h2>
+        </div>
 
+<div class="swiper photos-swiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img src="./images/pochvala-trenerem.jpg" alt="Trénink v posilovně">
+    </div>
+
+    <div class="swiper-slide">
+      <img src="./images/oslava-uspechu.jpg" alt="Silový trénink s činkou">
+    </div>
+
+  </div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-pagination"></div>
+</div>
+    </section>
 
 
 
@@ -91,5 +115,20 @@
         <a class="body-grey" href="phoneto:+420604731627">+420 604 731 627</a>
         <a class="body-grey" href="instagram.com/@_jarkaslav_">@_jarkaslav_</a>
     </footer>
+
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+
+  new Swiper('.photos-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    loop: true,
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    breakpoints: {
+      800: { slidesPerView: 2, spaceBetween: 20 }
+    }
+  });
+</script>
 </body>
 </html>
