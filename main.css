@@ -54,7 +54,7 @@ img{
 
 .logo{
     display: flex;
-    font-size: var(--fs-h2);
+    font-size: var(--fs-h3);
     font-family: var(--font-display);
     color: black;
     align-items: center;
@@ -74,7 +74,7 @@ img{
     align-items: center;
     gap: 1em;
     font-family: var(--font-body);
-    font-size: var(--fs-body);
+    font-size: var(--fs-stat);
     font-weight: bold;
 }
 
@@ -157,7 +157,7 @@ img{
 
 .btn-primary{
     display: inline-block;
-    padding: 1em 1.75em;
+    padding: 0.75em 1.5em;
     background-color: var(--pulse);
     color: white;
     font-family: var(--font-body);
@@ -167,6 +167,7 @@ img{
     border: 2px solid var(--pulse);
     max-width: fit-content;
     transition: 0.5s;
+    text-align: center;
 }
 
 .btn-primary:hover{
@@ -177,7 +178,7 @@ img{
 
 .btn-secondary{
     display: inline-block;
-    padding: 1em 1.75em;
+    padding: 0.75em 1.5em;
     background-color: white;
     color: var(--ink);
     font-family: var(--font-body);
@@ -187,6 +188,7 @@ img{
     border: 2px solid var(--ink);
     max-width: fit-content;
     transition: 0.5s;
+    text-align: center;
 }
 
 .btn-secondary:hover{
@@ -276,6 +278,7 @@ img{
     border: 2px solid var(--ink);
     transition: 0.5s;
     justify-self: center;
+    padding-bottom: 1.25em;
     
         
 }
@@ -306,6 +309,7 @@ img{
     padding: 1.25em;
     display: flex;
     flex-direction: column;
+    
 }
 
 .sluzba-ul{
@@ -326,10 +330,9 @@ img{
     margin-right: 10px;
 }
 
-.sluzba a{
+.btn-sluzba{
     align-self: center;
     margin-top: auto;
-    
 }
 
 .sluzba--favourite{
@@ -355,8 +358,10 @@ img{
 .sluzby-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.25em;
+    gap: 2.5em;
     padding: 1.25em;
+    grid-template-rows: auto;
+    margin: 1em;
     
 }
 
@@ -477,10 +482,12 @@ form{
 }
 
 .formular-bunky{
+    
 }
 
 .bunka{
     align-self: center;
+    margin-top: 1.25em;
     
 }
 
@@ -530,6 +537,10 @@ form > button:hover{
     background-color: var(--paper);
 }
 
+.reviewer{
+    margin-top: auto;
+}
+
 .review-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -575,6 +586,14 @@ form > button:hover{
         flex-direction: column;
         gap: 1.25em;
         justify-content: center;
+    }
+
+    .logo{
+        font-size: var(--fs-h2);
+    }
+
+    .header-nav{
+        font-size: var(--fs-body);
     }
 
     
